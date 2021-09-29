@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+
+  <!-- Icone da Pag -->
+  <link rel="icon" type="image/png" href="images/fundo.jpg" sizes="32x32" />
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Brejas</title>
+</head>
+<body>
+    <header>
+        <h1>Beers</h1>
+            <form>
+              <input type="radio" id="padrao" name="fav_language" checked="checked">
+              <label for="padrao">Padrão</label> 
+              <input type="radio" id="acid" name="fav_language">
+              <label for="acid">Cerveja Mais Ácida</label> 
+              <input type="radio" id="lessAcid" name="fav_language">
+              <label for="lessAcid">Cerveja Menos Ácida</label>
+              <input type="radio" id="expensive" name="fav_language">
+              <label for="expensive">Cerveja Mais Cara</label>
+              <input type="radio" id="cheap" name="fav_language" placeholder="cheap">
+              <label for="cheap">Cerveja Mais Barata</label>
+            </form>
+            <input type="text" id= "search" placeholder="Nome da cerveja">
+      
+      <div id="total" class="total">Preço Total do estoque: </div>
+      <button id="myBtn" class="myBtn"><i class="fa fa-shopping-cart"></i></button>
+    </header>
+        <div id="beers" class="brejas"></div>
+        <script>var exports = {};</script>
+        <script type="module" src="dist/index.js"></script>
+        <script src="dist/modifiers/busca.js"></script>
+  
+  <div id="myModal" class="modal">
+    <div class="modal-content" id = "modal-content"></div>
+  
+  </div>
+  <script src = dist/visual/modal.js></script>
+</body>
+</html>
+  
+  
